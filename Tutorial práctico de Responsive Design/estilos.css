@@ -1,5 +1,5 @@
 *{
-	morgin;0
+	margin:0;
 }
 body{
 	background:lightgray;
@@ -29,6 +29,6 @@ header{
 .avatar
 {
 	border:5px solid black;
-	margin:-left 20px;
+	margin-left:20px;
 
 }
