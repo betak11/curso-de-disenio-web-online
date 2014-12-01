@@ -11,14 +11,21 @@ body{
 header{
 	border:10px solid black;
 	display:inline-block;
-	padding:20px;
+	padding:30px;
+}
+#contenedor{
+	background:gray;
+	margin:0 auto;
+	max-width:1300px;
+
 }
 #webs{
 	background:gray;
+
 }
-#webs article{
+#webs{
 	background:#ccc;
-	border:1px solid white;
+	border:1px solid black;
 	display:inline-block;
 	padding:10px;
 	width:150px;
@@ -28,7 +35,7 @@ header{
 }
 .avatar
 {
-	border:5px solid black;
+	border:5px solid white;
 	margin-left:20px;
 
 }
