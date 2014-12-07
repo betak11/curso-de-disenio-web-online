@@ -8,3 +8,26 @@ body
 	font-family:arial;
 	font-size:16px; 
 }
+header figure{
+	float:left;
+}
+header{
+	background:#3104B4; 
+	color:white;
+}
+header h1{
+	font-size:1.2em;
+}
+header #logo img{
+	border-right:1px solid white;
+	margin-right:0.5em;
+	padding-right:0.5em;
+	width:52px;
+}
+header #avatar img{
+	border-radius:50%;
+	width:55px;
+}
+header #imagen img{
+	width:100px;
+}
