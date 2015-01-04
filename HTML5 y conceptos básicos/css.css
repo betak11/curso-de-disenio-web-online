@@ -1,3 +1,26 @@
+/*
+DIFERENCIA ENTRE DISPLAY:INLINE, BLOCK, E INLINE-BLOCK
+INLINE (en linea)
+* Respeta el margen y relleno de derecha e izquierda, pero no el de arriba y abajo
+* NO pueden tener ancho ni alto, se convierten del tamaño de su contenido (si es que tienen)
+* Permiten que otros elementos se pongan a sus costados
+
+BLOCK:
+* Este si respeta todos los margenes y rellenos
+* Permite ancho y alto
+* Forza un salto de linea despues de cada elemento (cada elemento ocupa su propio renglon)
+* No permite que haya elementes a sus costados
+
+INLINE-BLOCK elements:
+* Es como una combinacion de los dos anteriores, respeta todos los margenes y rellenos, permite usar ancho y
+alto, y permiten que otros elementos se pongan a sus costados
+
+
+TAREA:
+Escribeme la diferencia (aunque sea con tus propias palabras)
+la diferencia entre position:absolute y position:relative
+
+*/
 a
 {
 	color:#22BCE0;
