@@ -21,6 +21,46 @@ Escribeme la diferencia (aunque sea con tus propias palabras)
 la diferencia entre position:absolute y position:relative
 
 */
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-mprwb0');
+	src:url('fonts/icomoon.eot?#iefix-mprwb0') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-mprwb0') format('woff'),
+		url('fonts/icomoon.ttf?-mprwb0') format('truetype'),
+		url('fonts/icomoon.svg?-mprwb0#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil:before {
+	content: "\e905";
+}
+
+.icon-star-empty:before {
+	content: "\e9d7";
+}
+
+.icon-arrow-up:before {
+	content: "\ea32";
+}
+
+.icon-arrow-down:before {
+	content: "\ea36";
+}
 a
 {
 	color:#22BCE0;
@@ -28,18 +68,33 @@ a
 body
 {
 	background:#EEEEEE;
-	font-family:arial;
+	font-family:"open sans";
 	font-size:16px; 
 }
 header figure{
 	float:left;
 }
 header{
-	background:#3104B4; 
+	background:#08004C; 
 	color:white;
 	overflow:hidden;
 	padding:0.5em; 
 	position:relative;
+}
+footer
+{
+	color:rgba(255,255,255,0.7);
+	background:#22BCE0;
+	text-align:center;
+	padding:1em;
+}
+footer p:first-child
+{
+	margin-bottom:0px;
+}
+footer p:last-child
+{
+	margin-top:0px;
 }
 header h1{
 	font-size:1.2em;
@@ -63,10 +118,11 @@ header #avatar img{
 }
 #imagen img{
 	width:150px;
+
 }
 nav 
 {
-	background:#80BCA3;
+	background:#898AD8;
 	padding:0 0.5em;
 	position:relative;
 
@@ -86,10 +142,13 @@ nav ul #publicar_nav
 }
 nav ul #publicar_nav a
 {
-	background:#22BCE0;
-	border-radius:0.5em;
+	background:#22E0D2;
+	border-radius:5px;
+	box-shadow:rgba(0,0,0,0.5) 2px 2px 5px; 
 	padding:0.8em;
+	font-style:italic;
 	text-decoration: none;
+	text-shadow:rgba(0,0,0,0.5) 2px 2px 5px; 
 }
 nav ul li
 {
@@ -103,3 +162,81 @@ nav ul li a
 	padding:0.5em 0;
 	
 }
+#contenido
+{
+	margin:1em;
+}
+#contenido .item
+{
+	background:white;
+	border-bottom:3px solid #22BCE0;
+	position:relative;
+	margin-bottom:2em;
+	min-height:105px;
+}
+#contenido .item .imagen_item
+{
+	float:left;
+	margin:0 1em 0 0 ;
+}
+#contenido .item .autor_item
+{
+	color:#AAA;
+}
+#contenido .item .datos_item
+{
+	text-align:right;
+	margin:1em 1em 0 0;
+}
+#contenido .item .datos_item .tag_item
+{
+	background:#F4502A;
+	border-radius:0.5em;
+	color:white;
+	float:left;
+	display:inline-block;
+	padding:0.2em 0.5em;
+	text-decoration:none; 
+
+}
+#contenido .item .datos_item .fecha_item
+{
+	color:#AAA;
+}
+#contenido .item .imagen_item img
+{
+	width:96px;
+}
+#contenido .item .titulo_item
+{
+	font-size: 1.2em;
+	font-style: italic;
+	padding-top:;
+
+}
+#contenido .item .titulo_item a
+{
+	color:#444;
+	text-decoration:none;
+}
+#contenido .item .votacion
+{
+	background:white;
+	border-radius:0 0 0.5em 0.5em;
+	position:absolute;
+	top:100%;
+	margin-top:3px;
+	left:10%;
+	width:90%;
+}
+#contenido .item .votacion .comentarios_item ,
+#contenido .item .votacion .guardar_item
+{
+	float:right;
+}
+
+
+
+
+
+
