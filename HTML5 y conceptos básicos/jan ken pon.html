@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+	<meta chrset="utf-8">
+	<title>jan ken pon</title>
+	<script type="text/javascript">
+	function aleatorio(minimo,maximo)
+	{
+		var numero= Math.floor(Math.random() * (minimo - maximo +1)+minimo)
+		return numero;
+	}
+	var piedra = 0;
+	var pappel = 1;
+	var tijeras = 2;
+	var opciones = ["piedra","pappel","tijeras"]
+
+	var opcionUsuario;
+	var opcionMaquina =aleatorio(0,2);
+	opcionUsuario =prompt("que eliges?\n piedra: 0\n pappel: 1\n tijeras: 2",0);
+
+	alert("elegistes "+opciones[opcionUsuario])
+	alert("javascript eligio "+ opciones[opcionMaquina])
+
+
+	if(opcionUsuario == piedra)
+	{
+
+		if(opcionMaquina == piedra)
+		{
+			alert("enpate");
+		}
+
+		else if(opcionMaquina == pappel)
+		{
+			alert("perdistes :(");
+		}
+
+		else if(opcionMaquina == tijeras)
+		{
+			alert("ganastes :D");
+		}
+	}
+	else if(opcionUsuario == pappel)
+	{
+
+		if(opcionMaquina == piedra)
+		{
+			alert("ganastes :D");
+		}
+
+		else if(opcionMaquina == pappel)
+		{
+			alert("enpate");
+		}
+
+		else if(opcionMaquina == tijeras)
+		{
+			alert("perdistes :(");
+		}
+	}
+	else if(opcionUsuario == tijeras)
+	{
+
+		if(opcionMaquina == piedra)
+		{
+			alert("perdistes :(");
+		}
+
+		else if(opcionMaquina == pappel)
+		{
+			alert("ganastes :D");
+		}
+
+		else if(opcionMaquina == tijeras)
+		{
+			alert("enpate");
+		}
+	}
+	</script>
+</head>
+<body>
+</body>
+</html>
