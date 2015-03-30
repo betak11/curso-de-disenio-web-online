@@ -38,4 +38,5 @@ function mifuncion(){}
 
 //De la variable anterior, accesa la propiedad de adrian, y luego la propiedad de kevin shalom (tendras que usar los corchetes)
 
-//Crea 
+//Crea un objeto con 3 propiedades, las propiedades se pueden llamar como quieras, pero los valores deben ser un numero, un arreglo, una funcion
+
